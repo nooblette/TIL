@@ -66,7 +66,7 @@
   ```java
   public int partition(int[] array, int left, int right){
   
-      int mid = (left + right) / 2;  1. pviot 선택
+      int mid = (left + right) / 2; // 1. pviot 선택
       int i = left, j = right;
       
       // 생략
@@ -75,10 +75,10 @@
  
 **시간 복잡도**
   - 최선의 경우 : T(n) = O(nlogn)
-  ![시간복잡도](./images/QuickSort_BestTC.jpeg)  
+  ![시간복잡도](./images/QuickSort_BestTC.jpg)  
   
   - 최악의 경우 : T(n) = O(n^2)
-  ![시간복잡도](./images/QuickSort_WorstTC.jpeg)
+  ![시간복잡도](./images/QuickSort_WorstTC.jpg)
   
 **공간 복잡도**
   - 주어진 배열 내에서 swap 연산이 이루어지므로 O(n)
@@ -94,16 +94,16 @@
 
 
 **Quick Sort가 빠른 이유**
-  1. 불필요한 Data 이동이 적다.(pviot을 기준으로 i, j만을 변경(두 영역으로만))
+  1. 불필요한 Data 이동이 적다.(pviot을 기준으로 i, j만을 변경(두 영역으로만))  
     - Bubble Sort의 경우 n^2번 비교, n^2번 swap을 수행
 
-  2. Locality(짧은 시간동안 반복적으로 접근하는 데이터의 성질)
+  2. Locality(짧은 시간동안 반복적으로 접근하는 데이터의 성질)  
     - 불필요한 Data 이동이 적으므로 **Cache에 반복적으로 접근 가능**
        1. cache miss가 적고, physical memory에 접근하는 경우가 상대적으로 적음
        2. 한정적인 범위에서만(pivot을 기준으로 좌우로 나뉨) Data 들이 움직임
        **_=>_ 하드웨어 적으로 효율적인 방법(Cache의 도움을 받을 수 있다)** 
        
-  3. vs. Merge Sort
+  3. vs. Merge Sort  
     - Merge Sort의 경우 **끝에서 끝으로 계속 왔다갔다** 하며 데이터를 탐색
-    - 이로인해 cache의 page가 계속해서 바뀌어 Locality가 
+    - 이로인해 cache의 page가 계속해서 바뀌어 Locality가 떨어짐
      
