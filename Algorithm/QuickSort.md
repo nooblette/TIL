@@ -1,12 +1,12 @@
 # 퀵 정렬(Quick Sort)
-abstract
+**Abstract**
   - **분할정복**을 통해 정렬
   - 불안정 정렬, 다른 원소와의 비교만으로 정렬을 수행하는 비교 정렬
   - Merge Sort와 달리 배열은 <u>비균등</u>하게 분할
   
   
   
-process
+**Process**
   1. 배열에서 **하나의 원소**를 선정 -> *Pivot*
   2. Pivot 앞에는 Pivot보다 작은 값이, 뒤에는 Pivot 보다 큰 값이 오도록 배열을 분리 -> *Divide*
   3. 분할된 두 영역에 대해 1단계부터 다시 반복 -> *Recursion*  
@@ -14,4 +14,4 @@ process
   
   
    
-java code
+**Source Code**
