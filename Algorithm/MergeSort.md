@@ -1,4 +1,4 @@
-# 이중 피벗 퀵 정렬(Dual Pivot Quick Sort)  
+# 병합 정렬(MergeSort)
 **Abstract**
   - 불안정 정렬
   - **분할정복**을 통해 정렬
@@ -10,39 +10,39 @@
 ---
 **Source Code**
   ```java
-  public void MergeSort(int[] arr, int left, int right){
-    if(left < right){
-      int mid = (left + right) / 2;
+    public void MergeSort(int[] arr, int left, int right){
+      if(left < right){
+        int mid = (left + right) / 2;
       
-      MergeSort(arr, left, mid);
-      MergeSort(arr, mid+1, right);
-      Merge(arr, left, mid ,right); // merger sort의 핵심이 되는 부분 -> 다시 비교하며 병합
+        MergeSort(arr, left, mid);
+        MergeSort(arr, mid+1, right);
+        Merge(arr, left, mid ,right); // merger sort의 핵심이 되는 부분 -> 다시 비교하며 병합
+      }
     }
-  }
   ```
   ```java
-  public static void Merge(int[] array, int left, int mid, int right){
-      int[] L = Arrays.copyOfRange(array, left, mid+1);
-      int[] R = Arrays.copyOfRange(array, mid+1, right+1);
+    public static void Merge(int[] array, int left, int mid, int right){
+        int[] L = Arrays.copyOfRange(array, left, mid+1);
+        int[] R = Arrays.copyOfRange(array, mid+1, right+1);
       
-      int i = 0, j = 0, k = left;  // i는 L의 인덱스, j는 R의 인덱스, k는 새로운 병합될 배열의 인덱스를 표현
-      int ll = L.lenght, rl = R.length;
+        int i = 0, j = 0, k = left;  // i는 L의 인덱스, j는 R의 인덱스, k는 새로운 병합될 배열의 인덱스를 표현
+        int ll = L.lenght, rl = R.length;
       
-      while(i < ll && j < rl){
-        if(L[i] <= R[i]){
-           array[k] = L[i++];
+        while(i < ll && j < rl){
+          if(L[i] <= R[i]){
+            array[k] = L[i++];
+          }
+          else{
+            array[k] = R[j++];
+          }
+          k++;
         }
-        else{
-          array[k] = R[j++];
-        }
-        k++;
+      
+        // L,R의 남은 부분이 있다면 마저 붙이기
+        while(i < ll) array[k++] = L[i++];
+        while(j < rl) array[k++] = R[j++];
       }
-      
-      // L,R의 남은 부분이 있다면 마저 붙이기
-      while(i < ll) array[k++] = L[i++];
-      while(j < rl) array[k++] = R[j++];
-    }
-    ```  
+    ```
 ---
 **Quick Sort와의 차이점**
   - Quick Sort : Pivot을 통해 정렬(partition) -> 2개의 영역으로 분리(divide) **이 두개의 영역에 대해 각각 비교**
