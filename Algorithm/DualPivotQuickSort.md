@@ -1,7 +1,7 @@
 # 이중 피벗 퀵 정렬(Dual Pivot Quick Sort)  
 **Abstract**
   - java의 Arrays.sort()가 사용하는 알고리즘
-  - 실제로는 Insertion Sort와 Dual Pivot Quick Sort를 결합해서 사용하지만 여기선 삽입정렬이 같이 있는것이 아닌 2개의 Pivot을 사용하는 경우만 저이
+  - 실제로는 Insertion Sort와 Dual Pivot Quick Sort를 결합해서 사용하지만 여기선 삽입정렬이 같이 있는것이 아닌 2개의 Pivot을 사용하는 경우만 정리
   - Insertion Sort는 이미 정렬된 배열에 대해 O(n) _(값을 한번만 비교하고 종료)_를 사용하므로 Quick Sort의 *불균등 분할*이라는 단점을 개선하기 위해 사용
 ---
 **Process**
