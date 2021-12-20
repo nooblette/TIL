@@ -5,9 +5,9 @@
   - Insertion Sort는 이미 정렬된 배열에 대해 O(n) _(값을 한번만 비교하고 종료)_를 사용하므로 Quick Sort의 *불균등 분할*이라는 단점을 개선하기 위해 사용
 ---
 **Process**
-  1. 기존 Quick Sort는 배열에서 **하나의 원소**를 선정, 여기서는 말 그대로 2개의 원소를 선정 -> *Dual Pivot*
-    1. lp(left pivot), rp(right pivot)
-    2. 두 pviot을 기준으로 3개의 영역으로 분할 **x < lp, lp < x < rp, rp < x** *(이상 영역1, 영역2, 영역3)* 
+  1. 기존 Quick Sort는 배열에서 **하나의 원소**를 선정, 여기서는 말 그대로 2개의 원소를 선정 -> *Dual Pivot*  
+    1-1. lp(left pivot), rp(right pivot)  
+    1-2. 두 pviot을 기준으로 3개의 영역으로 분할 **x < lp, lp < x < rp, rp < x** *(이상 영역1, 영역2, 영역3)*  
   2. lp > rp인 경우 lp와 rp를 교환
   3. 3개의 영역으로 분할
   4. 각각의 영역에 대해 다시 Dual Pivot Quick Sort 진행
