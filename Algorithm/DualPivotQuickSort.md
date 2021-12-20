@@ -11,7 +11,7 @@
   2. lp > rp인 경우 lp와 rp를 교환
   3. 3개의 영역으로 분할
   4. 각각의 영역에 대해 다시 Dual Pivot Quick Sort 진행
-  ![e.g.](./images/DualPivotQuickSortExample)
+  ![e.g.](./images/DualPivotQuickSortExample.jpg)
 ---
 **장점**
   - Quick Sort보다 좋은 성능
