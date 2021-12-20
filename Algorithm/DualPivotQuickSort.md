@@ -20,7 +20,6 @@
   - 여전히 worst case에선 **O(n^2)**의 시간복잡도(이때문에 java에선 복합적인 방식으로 해결)
 ---
 **Source Code**
-  - Conquer
   ```java
   public void DualPivotQuickSort(int[] arr, int left, int right){
     // l : 영역 1에 들어갈 다음 변수의 인덱스
