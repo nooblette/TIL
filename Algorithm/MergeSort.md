@@ -9,7 +9,7 @@
   2. 배열의 원소가 1일때부터 다시 n이 될때까지 비교하며 병합
 ---
 **Source Code**
-  ```java
+```java
     public void MergeSort(int[] arr, int left, int right){
       if(left < right){
         int mid = (left + right) / 2;
@@ -19,8 +19,8 @@
         Merge(arr, left, mid ,right); // merger sort의 핵심이 되는 부분 -> 다시 비교하며 병합
       }
     }
-  ```
-  ```java
+```
+```java
     public static void Merge(int[] array, int left, int mid, int right){
         int[] L = Arrays.copyOfRange(array, left, mid+1);
         int[] R = Arrays.copyOfRange(array, mid+1, right+1);
@@ -42,7 +42,7 @@
         while(i < ll) array[k++] = L[i++];
         while(j < rl) array[k++] = R[j++];
       }
-    ```
+```
 ---
 **Quick Sort와의 차이점**
   - Quick Sort : Pivot을 통해 정렬(partition) -> 2개의 영역으로 분리(divide) **이 두개의 영역에 대해 각각 비교**
