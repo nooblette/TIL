@@ -12,7 +12,7 @@
   4. 선정된 노드를 거쳐서 특정한 노드로 가는 경우를 고려하여 최소 비용을 갱신
   5. 3,4 단계를 반복
 
-![DijkstraAlgorithm](./images/DijkstraAlgorithm.jpg)
+![DijkstraAlgorithm](./images/DijstraAlgorithm.jpg)
 
 ---
 **Source Code**
@@ -73,5 +73,5 @@
     }
 ```
 ---
-**관련 문제**
-https://programmers.co.kr/learn/courses/30/lessons/12978?language=java
+**관련 문제**  
+  - https://programmers.co.kr/learn/courses/30/lessons/12978?language=java
