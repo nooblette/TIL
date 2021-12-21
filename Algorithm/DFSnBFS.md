@@ -15,7 +15,7 @@
 
 **방문 순서**
 
-[##_Image|kage@qkfte/btroxjiitZ8/Kbes6qI8zS60XGOCZgadNk/img.jpg|CDM|1.3|{"originWidth":638,"originHeight":586,"style":"alignCenter","width":297,"height":272,"filename":"./images/DFS.jpg"}_##]
+[DFS](./images/DFS.jpg)
 
 ---
 
@@ -31,7 +31,7 @@
 **_Source Code_**  
 \- 인접행렬(adjacent matrix)로 구현
 
-```
+```c
 void dfs(int x){ // x는 현재 방문한 노드를 의미 
     check[x] = true; // 방문 여부를 저장 
     for(int i = 1; i <= n; i++){ 
@@ -45,7 +45,7 @@ void dfs(int x){ // x는 현재 방문한 노드를 의미
 
 \- 인접리스트(adjacent list)로 구현
 
-```
+```c
 void dfs(int x){
     check[x] = true;
     for(int i = 0; i < adj_list[x].size(); i++){ // x번 노드에서 연결된 정점의 개수만큼
@@ -85,7 +85,7 @@ _V : vertex(접점), E : Edge(간선)_
 
 **방문 순서**
 
-[##_Image|kage@EtUFZ/btroxkuH29d/IW3PlVP9IsUbl7aatHszF0/img.jpg|CDM|1.3|{"originWidth":549,"originHeight":600,"style":"alignCenter","width":312,"height":341,"filename":"./images/BFS.jpg"}_##]
+[BFS](./images/BFS.jpg)
 
 ---
 
@@ -101,7 +101,7 @@ _V : vertex(접점), E : Edge(간선)_
 **_Source Code_**  
 \- 인접행렬(adjacent matrix)로 구현
 
-```
+```c
 void bfs(){
 	queue<int> q;
     
@@ -123,7 +123,7 @@ void bfs(){
 
 \- 인접리스트(adjacent list)로 구현
 
-```
+```c
 void bfs(){
 	queue<int> q;
     
