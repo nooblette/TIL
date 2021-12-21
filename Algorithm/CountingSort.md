@@ -10,7 +10,7 @@ ___
   1. 숫자별 등장 횟수를 count
 |숫자|0|1|2|3|4|5|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|등장횟수|3|2|2|3|3|
+|등장횟수|3|2|2|3|3|3|
 
 **비교 정렬 알고리즘의 한계**
 ![ComparsionSortDevisionTreeModel](./images/ComparsionSortDevisionTreeModel.jpg)
