@@ -15,7 +15,7 @@
 
 **방문 순서**
 
-[DFS](./images/DFS.jpg)
+![DFS](./images/DFS.jpg)
 
 ---
 
@@ -85,7 +85,7 @@ _V : vertex(접점), E : Edge(간선)_
 
 **방문 순서**
 
-[BFS](./images/BFS.jpg)
+![BFS](./images/BFS.jpg)
 
 ---
 
