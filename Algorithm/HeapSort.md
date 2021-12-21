@@ -32,7 +32,7 @@ public void HeapSort(int[] array){
 **_i를 n-2/1부터 시작하여 1씩 감소하는 이유_**
 - i를 n/2-1부터 시작하면 l = n-1, r = n이 된다.
 - 즉, 배열을 완전 이진트리로 구성할때 leat node가 있는 가장 갚고 우측에 있는 노드부터 시작하여 root까지 인덱스를 1씩 줄여가며 반복
-<img width="400" src="./images/ExHeapSortSource.jpg">
+<img width="400" src="./images/ExHeapSortSource2.jpg">
    
 ```java
 public void heapify(int[] array, int n, int i){
