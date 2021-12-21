@@ -54,4 +54,6 @@ public void heapify(int[] array, int n, int i){
   if(p != i){ // i = index of parent node
     swap(array, p, i); // 자식노드(p)가 부모노드(i)보다 컸다면 swap ( array[i] <=> array[p] )
     heapify(array, n, p); // array[p]엔 (swap전)array[i] 값이 오게되는데 p번 노드를 기준으로 Maxheap을 구성하기 위해다시 반복
+  }
+}
 ```
