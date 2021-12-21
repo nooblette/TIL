@@ -8,11 +8,11 @@ ___
 **Process**
   e.g.) [5 5 3 4 5 1 0 4 1 3 0 2 4 2 3 0] 을 정렬
   1. 숫자별 등장 횟수를 count
-|제목 셀1|제목 셀2|제목 셀3|제목 셀4|
-|---|---|---|---|
-|내용 1|내용 2|내용 3|내용 4|
-|내용 5|내용 6|내용 7|내용 8|
-|내용 9|내용 10|내용 11|내용 12|
+|  <center>Header1</center> |  <center>Header2</center> |  <center>Header3</center> |
+|:--------|:--------:|--------:|
+|**cell 1x1** | <center>cell 1x2 </center> |*cell 1x3* |
+|**cell 2x1** | <center>cell 2x2 </center> |*cell 2x3* |
+|**cell 3x1** | <center>cell 3x2 </center> |*cell 3x3* |
 
 
 **비교 정렬 알고리즘의 한계**
