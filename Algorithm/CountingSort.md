@@ -22,14 +22,41 @@ ___
 
   3. 누적합을 기반으로 정렬
 
-| index | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| index | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | number | 0 | 0 | 0 | 1 | 1 | 2 | 2 | 3 | 3 | 3 | 4 | 4 | 4 | 5 | 5 | 5 |
+---
+**장점**
+  - **O(n)**의 시간복잡도
+  - 알파벳(26개)으로 이루어진 Suffix array를 구할때 유용
+---
+**단점**
+  - Counting 배열에서 등장하는 최댓값만큼 추가적인 메모리 공간 필요 **_=> 메모리 낭비가 심하다_**
+  (가령, 배열에 '10억'이라는 숫자가 포함되어 있다면 '10억'만큼의 공간이 필요)
+---
+**Source Code**
+```c
+int arr[5]; // [5,4,3,2,1]
+int sorted_arr[5];
+
+// Counting 배열을 선언할 추가적인 메모미 공간 필요
+int counting[6]; // 1. Counting배열의 사이즈를 최대값 5까지 담기도록 선언(1이 시작 index)
+
+// 2. Counting 배열의 각 원소별로 등장 횟수 저장
+for(int i = 0; i < arr.length; i++){
+  counting[arr[i]]++;
+}
 
 
-**비교 정렬 알고리즘의 한계**
-![ComparsionSortDevisionTreeModel](./images/ComparsionSortDevisionTreeModel.jpg)
-  - n개의 원소에 대한 결정 트리 모델에서 Leaf node는 총 n!개 존재한다.
-  - 즉, Six-Comparision Sort는 아무리 빠른 알고리즘일지라도 Leaf node까지 도달하는데 log(n!)(=nlogn)만큼의 시간이 걸린다.
-  - 이러한 O(nlogn)을 줄일 수 있는 방법은 Comparision을 하지 않는 것  
-  **_=> 계수 정렬(Counting Sort), 기수 정렬(Radix Sort)_**
+// 3. 누적합 계산
+for(int i = 1; i < arr.length. i++){
+  counting[i] += counting[i-1];
+}
+
+// 4. 기존 array를 뒤에서 앞으로 순회하며(안정정렬을 위해서)
+// 해당하는 값의 인덱스(counting[value])에 값(value) 넣어주기
+for(int i = arr.length-1; i >= 0; i--){
+  sorted_arr[counting[arr[i]]] = arr[i];
+  counting[arr[i]]--;
+}
+```
