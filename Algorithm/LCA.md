@@ -1,7 +1,7 @@
 # 최소 공통 조상(Lowest Common Ancestor, LCA) 알고리즘
 **Abstract**
   - 트리에서 두 정점이 만나는 최초 부모 정점을 찾는 것
-  <img width="300" src="./images/LCA.jpg"> 
+  <img width="370" src="./images/LCA.jpg"> 
 
 ---
 **Process**
