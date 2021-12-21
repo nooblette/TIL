@@ -12,6 +12,12 @@ ___
 |---|---|---|---|---|---|---|
 | 등장횟수 | 3 | 2 | 2 | 3 | 3 | 3 |
 
+| 값 | 의미 | 기본값 | 5 |
+|---|:---:|---:| 5 |
+| `static` | 유형(기준) 없음 / 배치 불가능 | `static` | 5 |
+| `relative` | 요소 자신을 기준으로 배치 |  | 5 |
+| `absolute` | 위치 상 부모(조상)요소를 기준으로 배치 |  | 5 |
+| `fixed` | 브라우저 창을 기준으로 배치 |  | 5 |
 
 **비교 정렬 알고리즘의 한계**
 ![ComparsionSortDevisionTreeModel](./images/ComparsionSortDevisionTreeModel.jpg)
