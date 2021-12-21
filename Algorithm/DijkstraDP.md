@@ -15,7 +15,7 @@
 ![DijkstraAlgorithm](./images/DijstraAlgorithm.jpg)
 
 ---
-**Source Code**
+**Java Code**
 ```java
     private int min(int a, int b){
         if (a<b) return a;
