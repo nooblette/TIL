@@ -15,7 +15,7 @@
 ---
 **해시 충돌 대처법**
   1. 체이닝(Chaining)  
-  <img width="400" src="./images/Chaining.png">
+    <img width="400" src="./images/Chaining.png">
     - 연결리스트를 할당하여, 동일한 key값이 나온다면(해시충돌이 발생했다면) 연결리스트로 데이터를 연결  
     - **삽입, 삭제에 용이하지만 동적인 공간을 추가로 할당해야함**  
 
