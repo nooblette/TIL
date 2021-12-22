@@ -129,8 +129,7 @@ void getSuffixArray(const String s){ s = "banana"
 예를들어, t = 2일때 현재 cmp는 길이가 2인 substring을 기준(정렬 기준이 g)으로 비교를 하게된다.  
 다음 iter에선 t = 4인 substring을 기준으로 정렬을 하기위해서 현재 정렬 기준인 g를 보고 새로운 정렬 기준이 될 ng를 구한다.  
 
-ng를 구하는 과정에서  
-g를 기준으로 정렬된 SA의 원소를 비교해보면  
+ng를 구하는 과정에서 g를 기준으로 정렬된 SA의 원소를 비교해보면  
 
 두 원소(SA[i]와 SA[i-1])에 대해  
 1. SA[i-1] < SA[i] 이라면 SA[i]가 사전상으로 뒤에 오므로 새로운 정렬기준 ng도 이를 따르게 된다 **ng[i] = ng[i-1]+1**  
