@@ -74,7 +74,7 @@ e.g)
 **Source Code**
 - string이 'banana'일때의 아래의 소스코드로 suffix array를 구하는 과정 
 ```c
-void getSuffixArray(const String s){ s = "banana"
+void getSuffixArray(const String s){ //s = "banana"
   int n = s.size();
   int[] g = new int[n+1]; // group
   int[] SA = new int[n]; // suffix array
@@ -151,7 +151,7 @@ ng를 구하는 과정에서 g를 기준으로 정렬된 SA의 원소를 비교�
 ---
 **Source Code**
 ```c
-void getSuffixArray(const String s){ s = "banana"
+void getSuffixArray(const String s){ //s = "banana"
   int n = s.size();
   int[] g = new int[n+1]; // group
   int[] SA = new int[n]; // suffix array
