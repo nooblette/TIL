@@ -16,7 +16,7 @@ e.g)
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | suffix | 'i' | 'ipi' | 'issipi' | 'ississipi' | 'mississipi' | 'pi' | 'sipi' | 'sissipi' | 'ssipi' | 'ssissipi' |
 <br/>
-<br/>
+<br/>  
 **mississipip의 suffix array => *9741086352***
 
 ---
