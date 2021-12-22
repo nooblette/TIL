@@ -25,7 +25,7 @@ e.g)
   - **O(n^2 * logn)** 의 시간복잡도  
 
 ---
-**구현 방법 2️⃣ - Manber-Myers 알고리즘(Rank + Radix Sort)**
+**구현 방법 2️⃣ - Manber-Myers 알고리즘**
   1. 문자열 S를 범위가 1인 substring에 대해 사전순으로 정렬
   2. 정렬된 순서를 기준으로 grouping
   3. 범위를 2배 늘려 다시 정렬, 계속해서 2번과 3번 과정을 반복  
@@ -115,17 +115,16 @@ void getSuffixArray(const String s){ s = "banana"
       else{
         np[SA[i]] = ng[SA[i-1]];
       }
+    }
       
-      
-      // g를 ng로 갱신해주고 t를 2배로 늘리어 for loop를 반복
-      for(int i = 0; i <= n; i++){
-        g[i] = ng[i];
-      }
+    // g를 ng로 갱신해주고 t를 2배로 늘리어 for loop를 반복
+    for(int i = 0; i <= n; i++){
+      g[i] = ng[i];
     }
   }
 }
-
 ```
+
 **배열 g와 ng의 역할**  
 예를들어, t = 2일때 현재 cmp는 길이가 2인 substring을 기준(정렬 기준이 g)으로 비교를 하게된다.  
 다음 iter에선 t = 4인 substring을 기준으로 정렬을 하기위해서 현재 정렬 기준인 g를 보고 새로운 정렬 기준이 될 ng를 구한다.  
@@ -140,3 +139,63 @@ ng를 구하는 과정에서 g를 기준으로 정렬된 SA의 원소를 비교�
    
 3. SA[i-1] == SA[i] 이고 t만큼 뒤에 있는 원소에 대해 SA[i-1+t] == SA[i+t] 라면  
    사전상으로 동일하므로 여기선 같은 group으로 두고 다음번 t에서 비교한다 **ng[i] = ng[i-1]**  
+
+---
+**구현 방법 3️⃣ - counting sort로 정렬**
+  => 정렬하는데 *O(n)* + 길이를 두배씩 늘리면서 n까지 비교하므로 *O(logn)*  
+  => **O(n * logn)** 의 시간복잡도  
+  
+---
+**Absract**
+   - 방법 2에서 정렬 과정을 counting sort로만 수행하면된다.
+
+---
+**Source Code**
+```c
+void getSuffixArray(const String s){ s = "banana"
+  int n = s.size();
+  int[] g = new int[n+1]; // group
+  int[] SA = new int[n]; // suffix array
+  int[] ng = new int[n+1]; // 현재 substring의 길이가 t일때 t*2 에 대한 group
+  
+  for(int i = 0; i < n; i++){
+    SA[i] = i;
+    g[i] = s[i] - 'a';
+  }
+  
+  for(int t = 1; t <= n; t<<=1){
+    g[n] = -1;
+    bool cmp(int i, int j){
+      if(g[i]==g[j] return g[i+t] <= g[j+t];
+      else return g[i] < g[j];
+    };
+
+    // 이부분에서 sort를 counting sort로 진행해주면 된다.
+    // 그 외 코드는 방법 2와 동일하다
+    sort(SA, SA+n, cmp);
+    
+    ng[SA[0]] = 0;
+    ng[n] = -1;
+    
+    // 길이를 2배 늘렸을때 그룹 번호 배정
+    for(int i = 1; i < n; i++){
+      if(cmp(SA[i-1], SA[i])
+        ng[SA[i]] = ng[SA[i-1]] + 1;
+      else{
+        np[SA[i]] = ng[SA[i-1]];
+      }
+    }
+      
+    for(int i = 0; i <= n; i++){
+        g[i] = ng[i];
+    }
+  }
+}
+
+```
+
+---
+**참고한 곳**
+- https://plzrun.tistory.com/entry/Suffix-Array-ONlogNlgN%EA%B3%BC-ONlogN-%EA%B5%AC%ED%98%84-%EB%B0%8F-%EC%84%A4%EB%AA%85
+- https://ko.wikipedia.org/wiki/%EC%A0%91%EB%AF%B8%EC%82%AC_%EB%B0%B0%EC%97%B4
+- https://www.crocus.co.kr/613
