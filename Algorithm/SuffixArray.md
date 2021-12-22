@@ -59,7 +59,7 @@ e.g)
   
   **2단계와 3단계의 group 부여 과정 설명**  
   1. 2단계에서 group을 구하는 과정을 표로 정리하자면 다음과 같다.  
-  <img width="400" src="./images/SuffixArrayProcessTable.jpg" >
+  <img width="500" src="./images/SuffixArrayProcessTable.jpg" >
   
   2. 이때 동일한 rank값인 7을 갖는 group[2]와 group[5]를 비교하기 위해 빨간 부분을 가져와서 비교한다.  
   3. **중요** group[2]==group[5]이면, string[2..5]와 string[5...8]을 비교하는게 아니라 group[2 **+2** ]와 group[5 **+2** ]를 비교한다.  
