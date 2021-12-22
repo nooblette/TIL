@@ -70,6 +70,7 @@ void Travel(int n, const number W[][], index P[][], number& minlength){
 - n-1-k : n개의 노드 중 1번 노드와 부분집합의 원소의 개수인 k를 제외한 모든 원소를 대상으로 경로를 탐색  
 <br/>
 <img width="350" src="./images/TSPDPTimeComplexity.png">  
+<br/>
  **_=> 따라서 (n-2) * (n-1Ck) * (k) * (n-1-k) 만큼의 시간복잡도를 갖는다._**
 
 ---
