@@ -85,7 +85,7 @@ vs DP
 ---
 **상태 공간 트리**
 <br/>
-![StateSpaceTree](./images/statespacetree.jpg)
+<img width="750" src="./images/statespacetree.jpg">
   - 각 마디는 출발경로 V1부터 일주여행 경로를 나타냄
   - 최적경로를 구하기 위해 동일한 branch에서의 경로를 모두 검사한뒤, 가장 비용이 짧은 일주여행 경로를 택한다.
   - 또한 n-2개의 노드만 방문하면 마지막으로 남은 노드 + 1번노드 를 방문하면 최종 결과와 동일하므로 Level N-2까지만 탐색하여도 결과를 얻을 수 있다.
@@ -96,7 +96,7 @@ vs DP
   2. **현재 마디** 에서 **뻗어나가서 얻을 수 있는** 여행경로 **길이의 하한** 을 구한다 -> **lower bound를 보고 BFS**
   3. 현재 최소경로길이(minlength)보다 **한계값(Lower Bound)** 이 작은 경우 그 마디를 **유망(Promising)** 하다고 판단하여 탐색
 
-<img width="500" src="./images/TSPBnB.jpg">
+<img width="750" src="./images/TSPBnB.jpg">
 위 그림을 예시로 들어본다면
 <br/>  
 *e.g.1) 시작지점에서의 한계값*  
