@@ -97,6 +97,7 @@ vs DP
   3. 현재 최소경로길이(minlength)보다 **한계값(Lower Bound)** 이 작은 경우 그 마디를 **유망(Promising)** 하다고 판단하여 탐색
 
 <img width="750" src="./images/TSPBnB.jpg">  
+
 위 그림을 예시로 들어본다면  
 e.g.1) 시작지점에서의 한계값    
 
