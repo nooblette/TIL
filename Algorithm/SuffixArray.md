@@ -26,7 +26,7 @@ e.g)
   - **O(n^2 * logn)** 의 시간복잡도  
 
 ---
-**구현 방법 2️⃣ - Manber-Myers 알고리즘(Rank + Radix Sort)
+**구현 방법 2️⃣ - Manber-Myers 알고리즘(Rank + Radix Sort)**
   1. 문자열 S를 범위가 1인 substring에 대해 사전순으로 정렬
   2. 정렬된 순서를 기준으로 grouping
   3. 범위를 2배 늘려 다시 정렬, 계속해서 2번과 3번 과정을 반복  
