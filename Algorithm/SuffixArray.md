@@ -124,7 +124,7 @@ void getSuffixArray(const String s){ s = "banana"
   }
 }
 ```
-<br/>
+<br/>  
 **배열 g와 ng의 역할**  
 예를들어, t = 2일때 현재 cmp는 길이가 2인 substring을 기준(정렬 기준이 g)으로 비교를 하게된다.  
 다음 iter에선 t = 4인 substring을 기준으로 정렬을 하기위해서 현재 정렬 기준인 g를 보고 새로운 정렬 기준이 될 ng를 구한다.  
