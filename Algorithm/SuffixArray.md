@@ -4,13 +4,14 @@
   - 한 문자열의 접미사(Suffix)들을 모두 모아 정렬했을때, 그 순서를 문자열의 index로만 표현한 것
 
 e.g)
-String : mississipi
-Suffixes
+**String** : mississipi  
+<br/>
+**Suffixes**
 | index | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | suffix | 'mississipi' | 'ississipi' | 'ssissipi' | 'sissipi' | 'issipi' | 'ssipi' | 'sipi' | 'ipi' | 'pi' | 'i' |
 
-suffixes를 사전순으로 정렬
+**suffixes를 사전순으로 정렬**
 | index | 9 | 7 | 4 | 1 | 0 | 8 | 6 | 3 | 5 | 2 |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | suffix | 'i' | 'ipi' | 'issipi' | 'ississipi' | 'mississipi' | 'pi' | 'sipi' | 'sissipi' | 'ssipi' | 'ssissipi' |
