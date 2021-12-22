@@ -23,7 +23,7 @@ e.g)
 **구현 방법 1️⃣ - Brute Force**
   - string의 길이 n 만큼 suffixes를 따로 저장한 뒤 정렬
   - 정렬하는데 *O(nlogn)* + 정렬하기 위해 두 suffix를 비교하는데 *O(n)*
-  - **O(n^2 * logn)** 의 시간복잡도
+  - **O(n^2 * logn)** 의 시간복잡도  
 
 ---
 **구현 방법 2️⃣ - Manber-Myers 알고리즘(Rank + Radix Sort)
