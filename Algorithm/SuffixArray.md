@@ -102,6 +102,7 @@ void getSuffixArray(const String s){ s = "banana"
     ng[SA[0]] = 0; // SA[0] = 5, 마지막 a에 해당
     // s[SA[1]] = s[SA[5]] = 'a'지만 다음 문자를 살펴보면 s[SA[1]] = 'an', s[SA[5]] = 'a$'이므로  
     // 5번째 index에 있는 a가 g를 기준으로 정렬했을 때 가장 앞에 오게 된다.
+    
     ng[n] = -1;
     
     // 길이를 2배 늘렸을때 그룹 번호 배정
