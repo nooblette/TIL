@@ -71,7 +71,7 @@ void Travel(int n, const number W[][], index P[][], number& minlength){
 <br/>
 <img width="350" src="./images/TSPDPTimeComplexity.png">  
 <br/>
- **_=> 따라서 (n-2) * (n-1Ck) * (k) * (n-1-k) 만큼의 시간복잡도를 갖는다._**
+=> 따라서 **(n-2) * (n-1Ck) * (k) * (n-1-k) = O(n^2 * 2^n)** 만큼의 시간복잡도를 갖는다.
 
 ---
 **방법 3️⃣ - 분기한정법(Branch and Bound)
