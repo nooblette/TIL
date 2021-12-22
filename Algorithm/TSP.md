@@ -76,7 +76,7 @@ void Travel(int n, const number W[][], index P[][], number& minlength){
 ---
 **방법 3️⃣ - 분기한정법(Branch and Bound)**
 <br/>
-<img width="500" src="./images/TSPBnB.jpg">
+<img width="750" src="./images/TSPBnB.jpg">
 
 vs DP  
   - DP를 이용한 TSP 알고리즘의 시간복잡도 -> O(n^2 * 2^n) 
