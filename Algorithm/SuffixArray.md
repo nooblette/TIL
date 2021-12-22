@@ -14,9 +14,8 @@ e.g)
 **suffixes를 사전순으로 정렬**
 | index | 9 | 7 | 4 | 1 | 0 | 8 | 6 | 3 | 5 | 2 |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| suffix | 'i' | 'ipi' | 'issipi' | 'ississipi' | 'mississipi' | 'pi' | 'sipi' | 'sissipi' | 'ssipi' | 'ssissipi' |
-<br/>
-<br/>  
+| suffix | 'i' | 'ipi' | 'issipi' | 'ississipi' | 'mississipi' | 'pi' | 'sipi' | 'sissipi' | 'ssipi' | 'ssissipi' |  
+
 **mississipip의 suffix array => *9741086352***
 
 ---
