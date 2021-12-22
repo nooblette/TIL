@@ -122,7 +122,7 @@ V5 = min(18, 17, 4) = 4
 
 이때의 **lower bound는 14 + 7 + 4 + 2 + 4 = 31** 이다.
 
-<img width="300" src="./images/TSPCalMinlength.jpg">
+<img width="600" src="./images/TSPCalMinlength.jpg">
 
   - V2에서 나오는 가장짧은 이음선을 구하는 경우
     - 다시 V1으로 돌아가면 모든 노드를 한번씩 방문할 수 없으므로 V1을 제외한 다른 경로에 대한 최단 경로를 구한다.
