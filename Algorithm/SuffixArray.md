@@ -62,7 +62,7 @@ e.g)
   <img width="500" src="./images/SuffixArrayProcessTable.jpg" >
   
   2. 이때 동일한 rank값인 7을 갖는 group[2]와 group[5]를 비교하기 위해 빨간 부분을 가져와서 비교한다.  
-  3. **중요** group[2]==group[5]이면, string[2..5]와 string[5...8]을 비교하는게 아니라 group[2 **+2** ]와 group[5 **+2** ]를 비교한다.  
+  3. **중요)** group[2]==group[5]이면, string[2..5]와 string[5...8]을 비교하는게 아니라 group[2 **+2** ]와 group[5 **+2** ]를 비교한다.  
   4. 이때 2와 5에 더한 2는 현재 substring의 길이(t)에 해당한다.   
   ***=>* substring자체를 비교한다면 최대 N번 비교해야하지만,  
      이 방식으로는 최대 2번만 비교할 수 있다(group[i]와 group[j] -> group[i+t]와 group[j+t]**   
