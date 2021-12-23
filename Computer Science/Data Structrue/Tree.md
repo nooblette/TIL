@@ -11,17 +11,17 @@
 **순회 방식**  
 <img width="500" src="./images/TreeOrder.jpg">
 1. 전위순회(Pre-Order)
-  - **Parent -> Left child -> Right child** 순으로 방문
-  - 1 ➡️ 2 ➡️ 4 ➡️ 8 ➡️ 9 ➡️ 5 ➡️ 10 ➡️ 11 ➡️ 3 ➡️ 6 ➡️ 13 ➡️ 7 ➡️ 14
+    - **Parent -> Left child -> Right child** 순으로 방문
+    - 1 ➡️ 2 ➡️ 4 ➡️ 8 ➡️ 9 ➡️ 5 ➡️ 10 ➡️ 11 ➡️ 3 ➡️ 6 ➡️ 13 ➡️ 7 ➡️ 14
 
 2. 중위순회(In-Order)
-  - **Left Child -> Parent -> Right child** 순으로 방문
-  - 8 ➡️ 4 ➡️ 9 ➡️ 2 ➡️ 10 ➡️ 5 ➡️ 11 ➡️ 1 ➡️ 6 ➡️ 13 ➡️ 3 ➡️ 14 ➡️ 7
+    - **Left Child -> Parent -> Right child** 순으로 방문
+    - 8 ➡️ 4 ➡️ 9 ➡️ 2 ➡️ 10 ➡️ 5 ➡️ 11 ➡️ 1 ➡️ 6 ➡️ 13 ➡️ 3 ➡️ 14 ➡️ 7
 
 3. 후위순회(Post-Order)
-  - **Left child -> Right child -> Parent** 순으로 방문
-  - 8 ➡️ 9 ➡️ 4 ➡️ 10 ➡️ 11 ➡️ 5 ➡️ 2 ➡️ 13 ➡️ 6 ➡️ 14 ➡️ 7 ➡️ 3 ➡️ 1
+    - **Left child -> Right child -> Parent** 순으로 방문
+    - 8 ➡️ 9 ➡️ 4 ➡️ 10 ➡️ 11 ➡️ 5 ➡️ 2 ➡️ 13 ➡️ 6 ➡️ 14 ➡️ 7 ➡️ 3 ➡️ 1
 
 4. 레벨순회(Level-Order)
-  - **Root부터 각 Level 별로** 방문
-  - 1 ➡️ 2 ➡️ 3 ➡️ 4 ➡️ 5 ➡️ 6 ➡️ 7 ➡️ 8 ➡️ 9 ➡️ 10 ➡️ 11 ➡️ 13 ➡️ 14
+    - **Root부터 각 Level 별로** 방문
+    - 1 ➡️ 2 ➡️ 3 ➡️ 4 ➡️ 5 ➡️ 6 ➡️ 7 ➡️ 8 ➡️ 9 ➡️ 10 ➡️ 11 ➡️ 13 ➡️ 14
