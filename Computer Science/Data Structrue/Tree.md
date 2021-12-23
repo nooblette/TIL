@@ -1,6 +1,6 @@
 # 트리(Tree)
 **Abstract**  
-<img width="600" src="./images/Tree.jpg">
+<img width="900" src="./images/Tree.jpg">
   - **Node** 와 **Edge** 로 이루어진 자료구조
   - Cycle이 존재하지 않는다.(Cycle이 존재한다면 트리가 아니라 그래프)
   - 모든 노드는 자료형으로 표현 가능
