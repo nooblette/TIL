@@ -11,4 +11,4 @@
 *연산자 후위 처리 e.g.)* **A+B*C**
 1. 중위 표기식를 순차적으로 탐색하며 연산자는 스택에 넣고, 피연산자는 후위 표기식으로 넘긴다
 2. 피연산자를 모두 후위 표기식으로 넘겼다면 스택에서 연산자를 차례대로(위에서부터) pop한다.
-<img width="600" src="./images/StackPreOrder.jpg">
+<img width="700" src="./images/StackPreOrder.jpg">
