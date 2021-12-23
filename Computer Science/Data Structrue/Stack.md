@@ -1,6 +1,6 @@
 # 스택(Stack)
-**Abstract**
-<img width="400" src="./images/Stack.jpg">
+**Abstract**  
+<img width="300" src="./images/Stack.jpg">
   - **LIFO(후입선출)** : 가장 나중에 들어온것이 가장 먼저 나옴
   - 연산 : 삽입(push), 삭제(pop), 비어있는지 확인(isEmpty), 꽉 차 있는지 확인(isFull), SP(Stack Pointer, 스택의 가장 마지막원소를 가리킴)
 
