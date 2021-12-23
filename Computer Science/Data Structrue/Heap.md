@@ -20,7 +20,7 @@
 
 ---
 **힙의 종류**  
-<img width="150" src="./images/MaxHeapAndMinHeap.png"> 
+<img width="600" src="./images/MaxHeapAndMinHeap.png"> 
   1. 최대힙(Max Heap)
     - 부모노드의 키 값이 자식 노드의 키 값보다 **크거나 같은 *완전이진트리***
 
@@ -47,4 +47,4 @@
     1. root 노드를 삭제(최대힙에서 삭제연산은 최댓값요소를 삭제하는 것)
     2. 삭제된 root 노드에는 힙의 마지막 노드를 가져옴
     3. root 노드부터 차례대로 부모노드를 left child와 right child 중 큰 값과 swap => 다시 교환된 child를 부모 노드로 두고 반복
-      - 부모노드가 두 자식보다 크다면(MinHeap이면 작다면) 
+        - 부모노드가 두 자식보다 크다면(MinHeap이면 작다면) 
