@@ -34,7 +34,7 @@
   - Rotation은 LL, RR, LR, RL 4가지 case로 나뉨  
 
 <br/>
-👉 1️⃣) LL(Left Left)
+👉 1️⃣) LL(Left Left)  
 y는 z의 **왼쪽자식** , x도 y의 **왼쪽자식** 인 경우 **right rotation** 을 수행
 <img width="500" src="./images/LL.jpg">  
 <br/>
@@ -45,7 +45,7 @@ y는 z의 **왼쪽자식** , x도 y의 **왼쪽자식** 인 경우 **right rotat
 
 
 <br/>  
-👉 2️⃣) RR(Right Right)
+👉 2️⃣) RR(Right Right)  
 y는 z의 **오른쪽자식** , x도 y의 **오른쪽자식** 인 경우 **left rotation** 을 수행
 <img width="500" src="./images/RR.jpg">  
 <br/>  
@@ -56,10 +56,10 @@ y는 z의 **오른쪽자식** , x도 y의 **오른쪽자식** 인 경우 **left 
 
 
 <br/>  
-👉 3️⃣) LR(Left Right)
+👉 3️⃣) LR(Left Right)  
 y는 z의 **왼쪽자식** , x는 y의 **오른쪽 자식** 인 경우 **먼저 left rotation을 수행한 뒤 right rotation** 을 수행
 <img width="750" src="./images/LR.jpg">  
 <br/>  
-👉 4️⃣) RL(Right Left)
+👉 4️⃣) RL(Right Left)  
 y는 z의 **오른쪽자식** , x는 y의 **왼쪽 자식** 인 경우 **먼저 right rotation을 수행한 뒤 left rotation** 을 수행
 <img width="750" src="./images/RL.jpg">  
