@@ -14,7 +14,7 @@ e.g.) [5 8 7 3 2 5 1 8 9 7 3]
 **방법 2️⃣** 트리 구조를 이용하여 구하기
   - 각 노드마다 구간합을 저장하여, 트리의 특성상 **O(logN)** 의 시간복잡도  
 
-<img width="300" src="./images/SegmentTree.jpg">  
+<img width="500" src="./images/SegmentTree.jpg">  
 
 **구간합 트리 생성**   
 <img width="600" src="./images/SegmentTree1.jpg">  
@@ -25,7 +25,7 @@ e.g.) [5 8 7 3 2 5 1 8 9 7 3]
   - Leaf node가 N개면 트리의 깊이는 **H** => **ceil(logN)**
   - 배열의 크기 => 2^(h+1) **트리 노드의 개수는 a0 = 1, a1 =2, 공비 r = 2인 등비수열, 따라서 1+2+4+...+2^h = 1 + (2 * 2^h -1 ) / (2 - 1) = 2^h+1)
 
-<img width="300" src="./images/TreeDepthExample.jpg">  
+<img width="400" src="./images/TreeDepthExample.jpg">  
 **포화이진트리일때 깊이가 3이면 총 15개의 노드가 존재한다. 남는 (2^(3+1) = 16) 1개는 사용하지 않는 0번 index)**
 
 ---
