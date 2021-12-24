@@ -31,6 +31,8 @@ e.g.) [5 8 7 3 2 5 1 8 9 7 3]
 ---
 **연산**
   - 구간합 탐색
+
+
 <img width="700" src="./images/SegmentTreeSearch.jpg">  
 ```c
 int sum(int index, int start, int end, int left, int right){
@@ -56,6 +58,8 @@ int sum(int index, int start, int end, int left, int right){
 ```
 
   - 구간합 수정
+
+
 <img width="700" src="./images/SegmentTreeUpdate.jpg">  
 ```c
 void update(int start, int end, int node, int index, int diff){
