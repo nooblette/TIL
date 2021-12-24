@@ -34,6 +34,7 @@ e.g.) [5 8 7 3 2 5 1 8 9 7 3]
 
 
 <img width="700" src="./images/SegmentTreeSearch.jpg">  
+
 ```c
 int sum(int index, int start, int end, int left, int right){
   // 구간합을 구할 범위 : left, right / 노드의 시작과 끝 index : start, end
@@ -61,6 +62,7 @@ int sum(int index, int start, int end, int left, int right){
 
 
 <img width="700" src="./images/SegmentTreeUpdate.jpg">  
+
 ```c
 void update(int start, int end, int node, int index, int diff){
   // start, end : 현재 범위의 시작과 끝 인덱스
