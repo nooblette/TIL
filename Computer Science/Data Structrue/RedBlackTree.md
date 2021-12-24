@@ -27,10 +27,14 @@
   2. 무조건 가운데 있는 값을 부모로, 나머지 둘을 자식므로 만듦
   3. 올라간 가운데 있는 값을 **검정(Black)** 으로 두 자식은 **빨강(Red)** 으로 만듦
 
+
+
   - 다른 서브트리에 영향(Depth Property)를 주지 않기 때문에 한 번의 Restructuring으로 끝남
   1. 위 예시에서 w노드를 보면 알 수 있듯이, Double Red를 해결하기 전후의 Black노드의 개수는 동일하기 때문에 다른 서브트리의 Black Property에 영향을 끼치지 않는다.
   2. 한 번의 Restructuring으로 끝나므로 이 자체는 O(1)의 시간복잡도 하지만, Double Red는 한 노드가 insert된 뒤 발생하므로 **총 수행시간은 O(log(n))**
     - 어떤 node가 insert될 자리를 찾아야 하므로 logN의 시간이 소요
+
+
 
 
 2. uncle node가 **Red**인 경우 ➡️ **Recoloring**  
@@ -39,6 +43,8 @@
   1. 현재 insert된 노드(z)의 parent node(v)와 uncle node(w)를 **검정(Black)** 로 변경
   2. Grand Parent Node(x)를 **빨강(Red)** 로 변경
   3. Grand Parent Node가 Root Node가 아니라면(만일 Grand Parent위에 Red Node가 있었다면) **다시 Double Red가 발생할 수 있다.**
+
+
 
   - Black Depty는 일제히 1만큼 늘어나기 때문에 Depth Property를 만족
 
