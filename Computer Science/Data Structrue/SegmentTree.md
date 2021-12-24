@@ -17,7 +17,7 @@ e.g.) [5 8 7 3 2 5 1 8 9 7 3]
 <img width="500" src="./images/SegmentTree.jpg">  
 
 **구간합 트리 생성**   
-<img width="600" src="./images/SegmentTree1.jpg">  
+<img width="600" src="./images/SegmentTree2.jpg">  
 
 ---
 **트리 배열의 크기**
