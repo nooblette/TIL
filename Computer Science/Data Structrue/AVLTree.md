@@ -33,6 +33,8 @@
   - 삽입/삭제를 하여 |BF| >= 2 (불균등상태)가 된다면 **불균형 노드를 기준으로 서브트리의 이치를 변경하는 Rotation 작업** 을 수행하여 균형을 맞춤
   - Rotation은 LL, RR, LR, RL 4가지 case로 나뉨  
 
+<br/>  
+
 
 case 1️⃣) LL(Left Left)  
 y는 z의 **왼쪽자식** , x도 y의 **왼쪽자식** 인 경우 **right rotation** 을 수행  
@@ -43,7 +45,7 @@ y는 z의 **왼쪽자식** , x도 y의 **왼쪽자식** 인 경우 **right rotat
   2. z노드의 **왼쪽자식(기존 y)** 을 y노드의 **오른쪽 서브트리(T2)** 로 변경
   3. y는 새로운 parent, z는 y의 right child로 들어가게됨  
 
-
+<br/>  
 case 2️⃣) RR(Right Right)  
 y는 z의 **오른쪽자식** , x도 y의 **오른쪽자식** 인 경우 **left rotation** 을 수행  
 <img width="500" src="./images/RR.jpg">  
@@ -53,6 +55,7 @@ y는 z의 **오른쪽자식** , x도 y의 **오른쪽자식** 인 경우 **left 
   2. z노드의 **오른쪽자식(기존 y)** 을 y노드의 **왼쪽 서브트리(T2)** 로 변경
   3. y는 새로운 parent, z는 y의 right child로 들어가게됨  
 
+<br/>  
 case 3️⃣) LR(Left Right)  
 y는 z의 **왼쪽자식** , x는 y의 **오른쪽 자식** 인 경우 **먼저 left rotation을 수행한 뒤 right rotation** 을 수행  
 <img width="750" src="./images/LR.jpg">  
