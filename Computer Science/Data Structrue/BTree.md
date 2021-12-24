@@ -28,3 +28,8 @@ e.g.) 3차 B 트리
 
 
 # Key 탐색, 삽입, 삭제과
+
+---
+**참고한곳**
+  - https://gyoogle.dev/blog/computer-science/data-structure/B%20Tree%20&%20B+%20Tree.html
+  - https://velog.io/@emplam27/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C-%EC%95%8C%EC%95%84%EB%B3%B4%EB%8A%94-B-Tree
