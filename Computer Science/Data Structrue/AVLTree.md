@@ -62,3 +62,7 @@ y는 z의 **왼쪽자식** , x는 y의 **오른쪽 자식** 인 경우 **먼저 
 case 4️⃣) RL(Right Left)  
 y는 z의 **오른쪽자식** , x는 y의 **왼쪽 자식** 인 경우 **먼저 right rotation을 수행한 뒤 left rotation** 을 수행  
 <img width="750" src="./images/RL.jpg">  
+
+---
+**참고한 곳**
+  - https://yoongrammer.tistory.com/72#LL(Left_Left)_case
