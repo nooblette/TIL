@@ -21,8 +21,9 @@
 - 현재 insert된 node의 **uncle node**(부모노드의 형제 노드) **의 색깔에 따라 전략이 달라짐**
 
 1. uncle node가 **Black**인 경우 ➡️ **Restructuring**  
-<img width="800" src="./images/Restructuring.jpg">  
   - insert된 노드(z), parent node(v), uncle node(ㅈ)를 대상으로 Restructuring을 진행
+
+<img width="800" src="./images/Restructuring.jpg">  
   1. 나, 부모, 부모의 부모를 오름차순으로 정렬
   2. 무조건 가운데 있는 값을 부모로, 나머지 둘을 자식므로 만듦
   3. 올라간 가운데 있는 값을 **검정(Black)** 으로 두 자식은 **빨강(Red)** 으로 만듦
@@ -38,8 +39,9 @@
 
 
 2. uncle node가 **Red**인 경우 ➡️ **Recoloring**  
-<img width="800" src="./images/Recoloring.jpg">
   - insert된 노드(z), parent node(v), grand parent node(x)를 대상으로 Recoloring을 진행
+
+<img width="800" src="./images/Recoloring.jpg">  
   1. 현재 insert된 노드(z)의 parent node(v)와 uncle node(w)를 **검정(Black)** 로 변경
   2. Grand Parent Node(x)를 **빨강(Red)** 로 변경
   3. Grand Parent Node가 Root Node가 아니라면(만일 Grand Parent위에 Red Node가 있었다면) **다시 Double Red가 발생할 수 있다.**
