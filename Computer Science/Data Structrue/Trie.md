@@ -7,15 +7,15 @@
 
 ---
 **e.g.) [bear, bell, bid, bull, buy, sell, stack, stop]** (N = 8)  
-BST for Strings
+BST for Strings  
 <img width="600" src="./images/BSTforStrings.jpg">
   - 문자열의 개수(N)만큼 비교하기 때문에 O(logN)
   - 가장 길이가 긴 문자열의 길이가 M이라면 두 문자열을 비교하는데 O(M)
   - **총 O(MlogN)의 시간복잡도**  
     
     
-Trie for Strings
-<img width="600" src="./images/BSTforStrings.jpg">
+Trie for Strings  
+<img width="600" src="./images/TrieforStrings.jpg">
   - **트라이(Trie)를 활용** 한 Tree의 leaf node의 갯수는 문자열의 총 개수(N)과 동일하다
   - **O(M)의 시간복잡도** (가장 길이가 긴 Strings의 길이(M)만큼만 탐색하면 된다)
 
