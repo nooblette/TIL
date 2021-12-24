@@ -34,7 +34,7 @@ _e.g.)_ 삽입하는 Node의 색은 항상 **Red**
 
 1.   나, 부모, 부모의 부모를 오름차순으로 정렬
 2.  무조건 가운데 있는 값을 부모로, 나머지 둘을 자식므로 만듦
-3.  올라간 가운데 있는 값을 **검정(Black)** 으로 두 자식은 **빨강(Red)**으로 만듦
+3.  올라간 가운데 있는 값을 **검정(Black)** 으로 두 자식은 **빨강(Red)** 으로 만듦
 
 -   다른 서브트리에 영향(Depth Property)를 주지 않기 때문에 한 번의 Restructuring으로 끝남
     -   위 예시에서 w노드를 보면 알 수 있듯이, Double Red를 해결하기 전후의 Black노드의 개수는 동일하기 때문에 다른 서브트리의 Black Property에 영향을 끼치지 않는다.
@@ -47,7 +47,7 @@ _e.g.)_ 삽입하는 Node의 색은 항상 **Red**
 <img width="800" src="./images/Recoloring.jpg">  
 
 1.  현재 insert된 노드(z)의 parent node(v)와 uncle node(w)를 **검정(Black)**  변경
-2.  Grand Parent Node(x)를 **빨강(Red)**으로 변경
+2.  Grand Parent Node(x)를 **빨강(Red)** 으로 변경
 3.  Grand Parent Node가 Root Node가 아니라면(만일 Grand Parent위에 Red Node가 있었다면) **다시 Double Red가 발생할 수 있다.**
 
 -   Black Depth는 일제히 1만큼 늘어나기 때문에 Depth Property를 만족
