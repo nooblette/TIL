@@ -74,6 +74,18 @@ _e.g.)_ 삽입하는 Node의 색은 항상 **Red**
 -   **Red-Black 트리의 높이는 항상 logN**
 
 ---
+**AVL 트리 vs. Red-Black 트리**
+  - AVL 트리
+    - 더욱 엄격한 균영(|BF| < 2), Red-Black 트리보다 더 빠른 조회를 제공
+    - 각 노드별로 BF를 저장해야하므로 노드마다 int(4byte) 자료형 만큼의 저장 공간이 필요
+    - 더 빠른 검색이 필요한 경우(데이터베이스 인덱싱, 파일시스템)에서 사용
+  - Red-Black 트리
+    - 상대적으로 느슨한 균형(두 서브트리의 높이 차이가 최대 2배)으로 인해 회전이 거의 이루어지지 않음
+    - AVL 트리보다 삽입/삭제가 용이
+    - 검정 혹은 빨강색만 표현하면 되므로 노드당 1비트만 필요(비트반전)
+    - 대부분의 언어 라이브러리(map, C++의 멀티캐스트, Java의 treeMap)에서 사용
 
-**참고한곳**
+---
+**참고한 곳**
 -   [https://zeddios.tistory.com/237](https://zeddios.tistory.com/237)
+-   https://velog.io/@agugu95/%EC%9D%B4%EC%A7%84-%ED%8A%B8%EB%A6%AC%EC%9D%98-%EA%B7%A0%ED%98%95-RED-BALCKAVL#red-black-vs-avl
