@@ -34,9 +34,8 @@
   - Rotation은 LL, RR, LR, RL 4가지 case로 나뉨  
 
 
-case 1️⃣)   
-LL(Left Left)  
-y는 z의 **왼쪽자식** , x도 y의 **왼쪽자식** 인 경우 **right rotation** 을 수행
+case 1️⃣) LL(Left Left)  
+y는 z의 **왼쪽자식** , x도 y의 **왼쪽자식** 인 경우 **right rotation** 을 수행  
 <img width="500" src="./images/LL.jpg">  
 
 **Process**
@@ -45,9 +44,8 @@ y는 z의 **왼쪽자식** , x도 y의 **왼쪽자식** 인 경우 **right rotat
   3. y는 새로운 parent, z는 y의 right child로 들어가게됨  
 
 
-case 2️⃣)  
-RR(Right Right)  
-y는 z의 **오른쪽자식** , x도 y의 **오른쪽자식** 인 경우 **left rotation** 을 수행
+case 2️⃣) RR(Right Right)  
+y는 z의 **오른쪽자식** , x도 y의 **오른쪽자식** 인 경우 **left rotation** 을 수행  
 <img width="500" src="./images/RR.jpg">  
 <br/>  
 **Process**
@@ -55,12 +53,10 @@ y는 z의 **오른쪽자식** , x도 y의 **오른쪽자식** 인 경우 **left 
   2. z노드의 **오른쪽자식(기존 y)** 을 y노드의 **왼쪽 서브트리(T2)** 로 변경
   3. y는 새로운 parent, z는 y의 right child로 들어가게됨  
 
-case 3️⃣)  
-LR(Left Right)  
-y는 z의 **왼쪽자식** , x는 y의 **오른쪽 자식** 인 경우 **먼저 left rotation을 수행한 뒤 right rotation** 을 수행
+case 3️⃣) LR(Left Right)  
+y는 z의 **왼쪽자식** , x는 y의 **오른쪽 자식** 인 경우 **먼저 left rotation을 수행한 뒤 right rotation** 을 수행  
 <img width="750" src="./images/LR.jpg">  
 <br/>  
-case 4️⃣)  
-RL(Right Left)  
-y는 z의 **오른쪽자식** , x는 y의 **왼쪽 자식** 인 경우 **먼저 right rotation을 수행한 뒤 left rotation** 을 수행
+case 4️⃣) RL(Right Left)  
+y는 z의 **오른쪽자식** , x는 y의 **왼쪽 자식** 인 경우 **먼저 right rotation을 수행한 뒤 left rotation** 을 수행  
 <img width="750" src="./images/RL.jpg">  
