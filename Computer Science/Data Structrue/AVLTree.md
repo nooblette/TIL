@@ -41,6 +41,8 @@ y는 z의 **왼쪽자식** , x도 y의 **왼쪽자식** 인 경우 **right rotat
   1. y노드의 오른쪽 자식 노드를 z노드로 변경
   2. z노드의 **왼쪽자식(기존 y)** 을 y노드의 **오른쪽 서브트리(T2)** 로 변경
   3. y는 새로운 parent, z는 y의 right child로 들어가게됨  
+
+
 <br/>  
 case 2. RR(Right Right)
 y는 z의 **오른쪽자식** , x도 y의 **오른쪽자식** 인 경우 **left rotation** 을 수행
@@ -50,6 +52,8 @@ y는 z의 **오른쪽자식** , x도 y의 **오른쪽자식** 인 경우 **left 
   1. y노드의 왼쪽 자식 노드를 z노드로 변경
   2. z노드의 **오른쪽자식(기존 y)** 을 y노드의 **왼쪽 서브트리(T2)** 로 변경
   3. y는 새로운 parent, z는 y의 right child로 들어가게됨  
+
+
 <br/>  
 case 3. LR(Left Right)
 y는 z의 **왼쪽자식** , x는 y의 **오른쪽 자식** 인 경우 **먼저 left rotation을 수행한 뒤 right rotation** 을 수행
