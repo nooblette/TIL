@@ -23,8 +23,8 @@ M차 B 트리 ➡️ **최대 M개의 자식** 을 가질 수 있는 B 트리
   - 외부 노드(External Node)로 가는 경로의 길이는 모두 같음 **모든 leaf node는 동일한 level을 가짐**
   - 입력 자료는 중복될 수 없음  
 
-e.g.) 3차 B 트리
-<img width="600" src="./images/Btree.jpg">
+e.g.) 3차 B 트리  
+<img width="700" src="./images/Btree.jpg">
 
 
 # Key 탐색, 삽입, 삭제과
